@@ -13,7 +13,7 @@ export default async function Home() {
 
   const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=348a9bc33656ea24c342304d2ac140f7`)
   const res = await data.json()
-  console.log(res)
+  // console.log(res)
 
 
   return (

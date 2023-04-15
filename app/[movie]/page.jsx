@@ -24,7 +24,7 @@ const MovieDetails = async ({ params }) => {
                     <h1 className='text-2xl '>{res.title}</h1>
                     <span>Runtime : {res.runtime} minutes</span>
                     <button className='w-auto bg-green-500 h-[2.5rem] hover:transition-all hover:ease-in-out hover:bg-green-400 hover:scale-105  rounded-lg'>Watch Now</button>
-                    <button className='w-auto bg-[#d1d1d1] text-black h-[2.5rem] hover:transition-all hover:ease-in-out card hover:scale-105  rounded-lg'>Add to playlist</button>
+                    <button className='w-auto bg-[#d1d1d1]  h-[2.5rem] hover:transition-all hover:ease-in-out card hover:scale-105  rounded-lg'>Add to playlist</button>
                 </nav>
 
                 <Image
