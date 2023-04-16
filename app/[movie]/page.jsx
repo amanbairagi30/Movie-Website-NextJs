@@ -1,14 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
-import "../[movie]/MOvieDetail.css"
+import "./style.css"
 
-export async function generateStaticParams(){
-    const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=348a9bc33656ea24c342304d2ac140f7`)
-    const res = await data.json()
-    return res.results.map((movie)=>({
-        movie: toString(movie.id),
-    }))
-}
+// export async function generateStaticParams(){
+//     const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=348a9bc33656ea24c342304d2ac140f7`)
+//     const res = await data.json()
+//     return res.results.map((movie)=>({
+//         movie: toString(movie.id),
+//     }))
+// }
 
 const MovieDetails = async ({ params }) => {
     const { movie } = params
